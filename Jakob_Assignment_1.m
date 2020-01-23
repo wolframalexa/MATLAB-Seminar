@@ -32,3 +32,38 @@ bVec2 = transpose(aVec);
 
 % c
 cVec = -5:0.1:5;
+
+% d
+dVec = linspace(-5,5);
+
+% e
+A = [1+2j        1e-5;
+     exp(j*2*pi) 3+4j];
+
+% f
+B = magic(5)/65;
+% Checks for stochasticity:
+S1 = sum(B); % is left stochastic since  == 1
+S2 = sum(B, 2); % is right stochastic since == 1
+
+% g
+C = randn(5);
+
+%% Vector and Matrix Operations
+% a
+d1 = dot(aVec, bVec1);
+d2 = aVec.*bVec1';
+d2 = sum(d2,'all');
+
+% b
+E = B*C;
+
+% c
+G = 1/4*A^3 + 1/4*A^2 + 1/3*A + 1/6*eye(size(A,1));
+
+% d
+H = inv(A);
+
+% e
+cVec_dim = size(cVec);
+dVec_dim = size(dVec);
