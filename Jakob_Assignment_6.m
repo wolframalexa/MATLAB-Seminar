@@ -8,7 +8,7 @@ close all; clear all; clc
 %% Z-Transform
 
 num = [3/7 2/3 1/2];
-denom = [1/2 1/3 2];
+denom = [1/2 0 1/3 2];
 zplane(num,denom)
 title('Poles and Zeros')
 
