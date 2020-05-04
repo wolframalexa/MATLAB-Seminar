@@ -27,7 +27,7 @@ x = filter(num,denom,v);
 rx = zeros(1,6);
 
 for m = 0:1:5
-   rx(m+1) = mean(x(m+1:end).*x(1:end-m)); % corr coeff for wss is time-invariant, choose n=0
+   rx(m+1) = mean(x(m+1:end).*x(1:end-m)); % use large # samples for more accuracy
 end
 
 minusr = fliplr(rx);
