@@ -15,7 +15,7 @@ pp = roots(denom);
 zplane(zp,pp)
 title('Pole-Zero Plot')
 
-% Notice how the poles and zeros are all on or inside the unit circle; this
+% Notice how the poles and zeros are all inside the unit circle; this
 % confirms that the system is minimum-phase
 
 %% Question 3
